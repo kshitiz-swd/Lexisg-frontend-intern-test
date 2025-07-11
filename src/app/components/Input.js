@@ -28,7 +28,7 @@ const Input = ({ onSubmit, loading, query, setQuery }) => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-[#F3F2F3] rounded-[28px] p-2.5 w-full text-black absolute bottom-0 border border-[#E6E7E6]">
+    <div className="flex flex-col items-center bg-[#F3F2F3] rounded-[28px] p-2.5 w-full text-black absolute bottom-4 border border-[#E6E7E6]">
       <textarea
         ref={textareaRef}
         rows={1}

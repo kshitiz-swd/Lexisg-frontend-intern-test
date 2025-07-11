@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from "react";
 import Input from "./components/Input";
@@ -31,13 +31,13 @@ export default function Home() {
     setTimeout(() => {
       setResponse(res);
       setLoading(false);
-    }, 1000);
+    }, 2000);
   };
 
   return (
-    <div className="flex flex-col justify-end items-center min-h-screen px-4 pt-4 pb-32">
+    <div className="flex flex-col justify-end items-center min-h-screen px-4 pt-4 pb-40 sm:pb-32">
       {submittedQuery && response && (
-        <div className="w-full max-w-3xl mb-6">
+        <div className="w-full max-w-3xl mb-6 px-2 sm:px-0">
           <Response 
             response={response} 
             querySubmitted={submittedQuery}
@@ -48,7 +48,7 @@ export default function Home() {
 
       <PdfModal isOpen={showModal} onClose={() => setShowModal(false)} />
 
-      <div className="w-full max-w-3xl fixed bottom-0 left-1/2 -translate-x-1/2 px-4">
+      <div className="w-full max-w-3xl fixed bottom-0 left-1/2 -translate-x-1/2 px-2 sm:px-4">
         <Input 
           onSubmit={handleInput} 
           loading={loading} 
