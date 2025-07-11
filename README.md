@@ -39,6 +39,9 @@ Built using **React.js** and **Tailwind CSS**, simulating a real legal assistant
 
 ## 🚀 How to Run
 
+# Deploy
+https://lexisg-frontend-intern-test-lilac.vercel.app/
+
 # Clone the repo
 git clone https://github.com/yourusername/lexisg-frontend-intern-test.git
 cd lexisg-frontend-intern-test
